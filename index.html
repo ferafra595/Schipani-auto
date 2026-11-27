@@ -168,7 +168,15 @@
           </div>
         </div>
         <div class="map-card">
-          <iframe title="Mappa Schipani Auto" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Schipani%20Auto%20Via%20Alessandro%20Manzoni%207%2088837%20Petilia%20Policastro%20KR&output=embed"></iframe>
+          <div data-map>
+            <div class="map-placeholder" data-map-placeholder>
+              <p>Puoi aprire Google Maps dal link qui accanto o abilitare la mappa incorporata nelle preferenze cookie.</p>
+              <button class="button ghost" type="button" data-cookie-settings hidden>Preferenze cookie</button>
+            </div>
+            <template data-map-template>
+              <iframe title="Mappa Schipani Auto" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/maps?q=Schipani%20Auto%20Via%20Alessandro%20Manzoni%207%2088837%20Petilia%20Policastro%20KR&amp;output=embed"></iframe>
+            </template>
+          </div>
         </div>
       </div>
     </section>
@@ -183,7 +191,7 @@
         </div>
         <div>
           <strong>Link utili</strong>
-          <p><a href="./">Home</a><br><a href="targa-gialla.html">Targa gialla</a><br><a href="privacy.html">Informativa privacy</a></p>
+          <p><a href="./">Home</a><br><a href="targa-gialla.html">Targa gialla</a><br><a href="privacy.html">Informativa privacy</a><br><a href="cookie.html">Informativa cookie</a><br><button class="cookie-link" type="button" data-cookie-settings hidden>Preferenze cookie</button></p>
         </div>
         <div>
           <strong>Contatti</strong>
@@ -196,5 +204,6 @@
 
   <a class="floating-wa" href="https://wa.me/393398171599?text=Buongiorno%20Schipani%20Auto%2C%20vorrei%20avere%20informazioni." target="_blank" rel="noopener noreferrer" aria-label="Contatta Schipani Auto su WhatsApp">◉ WhatsApp</a>
   <script src="js/main.js"></script>
+  <script src="js/cookies.js" defer></script>
 </body>
 </html>
